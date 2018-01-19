@@ -3,21 +3,23 @@
 <title>MainFrame-Title</title>
 </head>
 <body>
-	<frameset rows="15%,70%,15%">
-	<frame src="frame_a.htm" name="FrameA-Name" style="display:none">
+	<div>
+		<frameset rows="15%,70%,15%">
+			<frame src="frame_a.htm" name="FrameA-Name" style="display:none"></frame>
 
-		<frameset cols="300,*,400">
-		<frame src="frame_b.htm">
+			<frameset cols="300,*,400">
+				<frame src="frame_b.htm"></frame>
 
-			<frameset rows="30%,70%">
-			<frame src="frame_c.htm" name="FrameC-Name">
-			<frame src="frame_d.htm" name="FrameD-Name">
+				<frameset rows="30%,70%">
+					<frame src="frame_c.htm" name="FrameC-Name"></frame>
+					<frame src="frame_d.htm" name="FrameD-Name"></frame>
+				</frameset>
+
+				<frame src="frame_e.htm"></frame>
 			</frameset>
 
-		<frame src="frame_e.htm">
+			<frame src="frame_f.htm" name="FrameF-Name" aria-hidden="true"></frame>
 		</frameset>
-
-	<frame src="frame_f.htm" name="FrameF-Name" aria-hidden="true">
-	</frameset>
+	</div>
 </body>
 </html>
